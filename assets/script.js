@@ -165,3 +165,30 @@ $('.fav').click(function (event) {
     console.log(favClicked);
     displayInformation(favClicked);
 });
+
+///////////////////////////////////////////////////////////////////////////
+let themeBridge = document.querySelector("#bridge");
+let themeLake = document.querySelector("#lake");
+let themeNight = document.querySelector("#night");
+let themeOcean = document.querySelector("#ocean");
+let themeSunset = document.querySelector("#sunset");
+
+themeBridge.addEventListener('click', () => {
+    document.body.style.backgroundImage = "url('assets/photos/bridge.jpg')";
+})
+
+themeLake.addEventListener('click', () => {
+    document.body.style.backgroundImage = "url('assets/photos/boat.jpg')";
+})
+
+themeNight.addEventListener('click', () => {
+    document.body.style.backgroundImage = "url('assets/photos/night.jpg')";
+})
+
+themeOcean.addEventListener('click', () => {
+    document.body.style.backgroundImage = "url('assets/photos/sunrise.jpg')";
+})
+
+themeSunset.addEventListener('click', () => {
+    document.body.style.backgroundImage = "url('assets/photos/Sunset.jpg')";
+})

@@ -1,0 +1,123 @@
+body {
+    background-image: url('/assets/Photos/background.png');
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h4, h5 {
+    color: white;
+  }
+  
+  .menu {
+    font-size: 50px;
+    color: white;
+    /* margin: 10px; */
+  }
+  
+  nav {
+    background: rgba(26, 103, 219, 0.678);
+  }
+  
+  /* .dayContainer {
+      padding: 10px;
+      margin: 10px;
+      display: block;
+      float: right;
+      border: 1px solid gray;
+      border-radius: 10px;
+  } */
+  
+  .searchHis, .fav, .theme {
+    margin-left: 30px;
+    padding: 0;
+    margin-top: 1;
+    display: block;
+  }
+  
+  .sidenav li {
+    line-height: 18px;
+  }
+  
+  .heading {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .searchHis {
+    display: block;
+  }
+  
+  .city {
+      font-size: 20px;
+  }
+  
+  .col {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid rgb(240, 225, 225);
+      border-radius: 10px;
+  }
+  
+  #submitBtn {
+    font-family: 'Oswald', sans-serif;
+    font-size:14px;
+    color:white;
+    background-color: rgb(22, 22, 102);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  #weatherContainer {
+    margin-top: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    background: rgba(26, 103, 219, 0.678);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    transition: all 0.4s ease 0s;
+    height: 220px;
+    width: 250px;
+  }
+  
+  #cityContainer{
+    text-align: center;
+    margin-top: 15px;
+    background-color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    background: rgba(76, 113, 170, 0.678);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 400px;
+  }
+  
+  .forecastContainer{
+    /* background-color: white; */
+    margin-left: 50px;
+    font-size: 12px;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    height: 220px;
+    width: 550px;
+  }
