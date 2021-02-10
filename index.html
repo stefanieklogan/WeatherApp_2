@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/9834d6982e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Weather Anywhere</title>
+</head>
+
+<nav>Your Weather Center
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="menu fas fa-bars"></i></a>
+</nav>
+
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background" width="200" height="200">
+        <img src="assets/Photos/background1.jpg">
+      </div>
+      <br>      <br>      <br>       <br>      <br>      <br>       <br>
+
+    </div></li>
+    <li>
+        <div class="row center">
+            <input class="input center" id="input" placeholder="Search for a city"></input>
+            <button type="button" id="submitBtn" class="btn btn-info">
+                <div class="fas fa-search"></div>
+        </div>
+    </li>
+    <li class="heading"><a href="#!">Search history</a></li>
+    <li id="searchHis"></li>
+    </li><div class="divider"></div></li>
+    <li class="heading"><a href="#!">Favorites</a></li>
+    <li id="fav"></li>
+    <p class="fav waves-effect" data-name="Celebration">Celebration</p>
+    <p class="fav waves-effect" data-name="Charlotte" href="#!">Charlotte</p>
+    <p class="fav waves-effect" data-name="Hendersonville" href="#!">Hendersonville</p>
+    <p class="fav waves-effect" data-name="McMurray" href="#!">McMurray</p>
+    <p class="fav waves-effect" data-name="Tampa" href="#!">Tampa</p>
+    </li><div class="divider"></div></li>
+    <li class="heading" id="theme"><a class="waves-effect" href="#!">Change theme</a></li>
+    <p class="theme waves-effect" data-name="Sunrise" alt="Sunrise" url="/assets/photos/sunrise.jpg">Sunrise</p>
+    <p class="theme waves-effect" data-name="Light" alt="Light" url="/assets/photos/background.png">Light</p>
+    <p class="theme waves-effect" data-name="Waterfall" alt="Waterfall" url="/assets/photos/sunrise.jpg">Waterfall</p>
+
+  </ul>
+  
+        
+
+<body class="body">
+   
+    <div class="row center" id="cityContainer">city</div>
+    <div class="row center" id="weatherContainer">
+        <h4>Forecast</h4>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+        $('.dropdown-trigger').dropdown();
+        
+        $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+    </script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
