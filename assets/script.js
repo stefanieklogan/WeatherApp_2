@@ -189,5 +189,5 @@ themeOcean.addEventListener('click', () => {
 });
 
 themeSunset.addEventListener('click', () => {
-    document.body.style.backgroundImage = "url('assets/photos/unset.jpg')";
+    document.body.style.backgroundImage = "url('assets/photos/sunset.jpg')";
 });
