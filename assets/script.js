@@ -39,6 +39,8 @@ function displayInformation(userInput) {
      //Prepare for additional searches - remove data classes not related to future API responses
      $("#weatherContainer").empty();
      $("#cityContainer").empty();
+     $("#weatherContainer").removeClass("hide");
+     $("#cityContainer").removeClass("hide");
     //Establish URL for call #1 to acquire lon & lat values based on city name
     var queryURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + userInput + APIKey;
 

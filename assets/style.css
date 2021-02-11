@@ -1,5 +1,5 @@
 body {
-    background-image: url('/assets/Photos/background.png');
+    background-image: url('/assets/photos/background.png');
     height: 100%;
     background-position: center;
     background-attachment: fixed;
@@ -43,16 +43,7 @@ body {
   .city {
       font-size: 20px;
   }
-  
-  /* .col {
-      display: flex;
-      justify-content: center;
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid rgb(240, 225, 225);
-      border-radius: 10px;
-  } */
-  
+    
   #submitBtn {
     font-family: 'Oswald', sans-serif;
     font-size:14px;
@@ -70,8 +61,9 @@ body {
     text-align: center;
     margin-top: 15px;
     font-size: 15px;
-    font-weight: 700;
-    color: rgb(152, 152, 207);
+    font-weight: 400;
+    color: rgb(255, 255, 255) !important;
+    background: rgba(26, 103, 219, 0.678);
     text-transform: uppercase;
     text-decoration: none;
     padding: 20px;
