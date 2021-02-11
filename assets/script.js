@@ -38,6 +38,7 @@ function displayInformation(userInput) {
 
      //Prepare for additional searches - remove data classes not related to future API responses
      $("#weatherContainer").empty();
+     $("#cityContainer").empty();
     //Establish URL for call #1 to acquire lon & lat values based on city name
     var queryURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + userInput + APIKey;
 
@@ -79,20 +80,18 @@ function displayInformation(userInput) {
                     //Current weather rendering
                     var cityContainer = $("<div>");
                     
-                    var cityDate = $("<p>");
+                   
                     var cityHumid = $("<p>");
                     var cityWind = $("<p>");
                     var cityTemp = $("<p>");
                     var cityUV = $("<p>");
-                    var cityIconEl = $("<img>");
-
-                    (cityDate).text(new Date().toLocaleDateString());
+                                   
                     (cityTemp).text("Temp: " + ((response.current.temp - 273.15) * 1.80 + 32).toFixed(1) + "⁰ F");
                     (cityHumid).text("Humidity: " + response.current.humidity + "%");
                     (cityWind).text("Wind: " + response.current.wind_speed + " mph");
 
                     $("#cityContainer").append(cityContainer);
-                    $("#cityContainer").append(cityDate);
+                 
                     $("#cityContainer").append(cityTemp);
                     $("#cityContainer").append(cityHumid);
                     $("#cityContainer").append(cityWind);
@@ -105,13 +104,13 @@ function displayInformation(userInput) {
 
                     if(uvIndex<4){
                         cityUV.css("color","green");
-                        cityUV.css("font-weight","700");
+                        cityUV.css("font-weight","900");
                       } else if(uvIndex>10){
                         cityUV.css("color","red");
-                        cityUV.css("font-weight","700");
+                        cityUV.css("font-weight","900");
                       } else{
                         cityUV.css("color","yellow");
-                        cityUV.css("font-weight","700");
+                        cityUV.css("font-weight","900");
                       }
 
                     ////////////////////////////////////////////////////////////////////////////////////
@@ -175,20 +174,20 @@ let themeSunset = document.querySelector("#sunset");
 
 themeBridge.addEventListener('click', () => {
     document.body.style.backgroundImage = "url('assets/photos/bridge.jpg')";
-})
+});
 
 themeLake.addEventListener('click', () => {
     document.body.style.backgroundImage = "url('assets/photos/boat.jpg')";
 })
-
+;
 themeNight.addEventListener('click', () => {
     document.body.style.backgroundImage = "url('assets/photos/night.jpg')";
-})
+});
 
 themeOcean.addEventListener('click', () => {
     document.body.style.backgroundImage = "url('assets/photos/sunrise.jpg')";
-})
+});
 
 themeSunset.addEventListener('click', () => {
-    document.body.style.backgroundImage = "url('assets/photos/Sunset.jpg')";
-})
+    document.body.style.backgroundImage = "url('assets/photos/unset.jpg')";
+});
